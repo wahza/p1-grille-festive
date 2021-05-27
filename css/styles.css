@@ -1,0 +1,189 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@charset "UTF-8";
+
+/**
+ * @author PrÃƒÂ©nom Nom courriel
+ *
+ * TABLE DES MATIERES
+ * Normalize
+ * Utilitaires
+ * Charte typographique
+ * Menu
+ * Grille
+ * Mise en page
+ *** Contenus principal et complÃƒÂ©mentaire
+ *** Architecture des CSS (liste de dÃƒÂ©finitions)
+ *** Pied de page
+ */
+
+/* Normalize
+   ========================================================================== */
+@import url(_normalize.css);
+
+/* Utilitaires
+   ========================================================================== */
+@import url(_utilitaires.css);
+
+/* Charte typographique
+   ========================================================================== */
+@import url(_typo.css);
+
+
+/* Menu
+   ========================================================================== */
+@import url(_menu.css);
+
+/* Grille
+   ========================================================================== */
+@import url(_grille.css);
+
+/* Mise en page
+   ========================================================================== */
+.accueil_entete{
+    color: #EFD445;
+}
+.picture__tag img{
+    width: 100%;
+}
+h1 {
+    color: ;
+    text-align:center;
+}
+h2 {
+    color: ;
+    text-align: center;
+
+}
+h3 {
+    /* color: #FFD38E; */
+    /* text-align: right; */
+}
+body {
+    background-color: #2B2B2B;
+    color: white;
+}
+.banniere {
+    padding-bottom: 3.5rem;
+}
+.intro {
+    text-align: left;
+}
+.infos {
+    /* border-top: solid 4px #FFD38E; */
+}
+.infos-article {
+}
+.infos-jeu {
+    text-align: right;
+    line-height: 3em;
+}
+.cards {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer {
+    text-align: center;
+    padding: 15rem 0 5rem 0;
+}
+@media (min-width: 1000px) {
+    body {
+    }
+    .banniere {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+@media (min-width: 800px) {
+    body {
+    }
+    .infos {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .infos-article {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+    }
+    .infos-jeu {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: end;
+    }
+
+    /*Styles pour la disposition des sections de la grille*/
+    .cards {
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: 150px repeat(4,1fr);
+        grid-gap: 10px;
+        grid-template-areas:
+". 1 1 1 2"
+". 3 3 4 4"
+". 5 5 5 5"
+"6 6 6 7 7"
+". 8 8 8 8"
+". 9 9 10 10";
+
+    }
+
+    .card1 {
+        grid-area: 1;
+    }
+
+    .card2 {
+        grid-area: 2;
+    }
+
+    .card3 {
+        grid-area: 3;
+    }
+
+    .card4 {
+        grid-area: 4;
+    }
+
+    .card5 {
+        grid-area: 5;
+    }
+    .card6 {
+        grid-area: 6;
+    }
+    .card7 {
+        grid-area: 7;
+    }
+    .card8 {
+        grid-area: 8;
+    }
+    .card9 {
+        grid-area: 9;
+    }
+    .card10 {
+        grid-area: 10;
+    }
+}
