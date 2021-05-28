@@ -85,10 +85,10 @@ body {
     /* border-top: solid 4px #FFD38E; */
 }
 .infos-article {
+    text-align: left;
 }
-.infos-jeu {
-    text-align: right;
-    line-height: 3em;
+.infos-article2 {
+    text-align: left;
 }
 .cards {
     margin: 0;
@@ -115,8 +115,12 @@ footer {
     }
 }
 @media (min-width: 800px) {
+    .card3{
+        background-color: #022b50;
+    }
     body {
     }
+
     .infos {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -125,11 +129,13 @@ footer {
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
+
     .infos-article {
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: start;
     }
+
     .infos-jeu {
         -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -138,52 +144,56 @@ footer {
 
     /*Styles pour la disposition des sections de la grille*/
     .cards {
-        display: -ms-grid;
         display: grid;
-        grid-template-columns: 150px repeat(4,1fr);
+        grid-template-columns:150px repeat(4, 1fr);
         grid-gap: 10px;
-        grid-template-areas:
-". 1 1 1 2"
-". 3 3 4 4"
-". 5 5 5 5"
-"6 6 6 7 7"
-". 8 8 8 8"
-". 9 9 10 10";
-
+        grid-template-areas: ". a a a b"
+". c c d d"
+". e e e e"
+"f f f g g"
+". h h h h"
+". i i j j";
     }
 
     .card1 {
-        grid-area: 1;
+        grid-area: a;
     }
 
     .card2 {
-        grid-area: 2;
+        grid-area: b;
     }
 
     .card3 {
-        grid-area: 3;
+        grid-area: c;
+       background-color: #6A1208;
     }
 
     .card4 {
-        grid-area: 4;
+        grid-area: d;
     }
 
     .card5 {
-        grid-area: 5;
+        grid-area: e;
     }
+
     .card6 {
-        grid-area: 6;
+        grid-area: f;
     }
+
     .card7 {
-        grid-area: 7;
+        grid-area: g;
+        background-color: #0C2081;
     }
+
     .card8 {
-        grid-area: 8;
+        grid-area: h;
     }
+
     .card9 {
-        grid-area: 9;
+        grid-area: i;
     }
+
     .card10 {
-        grid-area: 10;
+        grid-area: j;
     }
 }

@@ -99,12 +99,12 @@ body {
 /* Hiérarchie responsive : plus proche = plus petit  &  plus loin = plus grand */
 h1,
 .h1 { /* = 80px */
-    font-size: 8rem;
+    font-size: 4rem;
 }
 @media (min-width: 600px) {
     h1,
     .h1 { /* = 90px */
-        font-size: 9rem;
+        font-size: 5rem;
     }
 }
 @media (min-width: 800px) {
@@ -134,7 +134,7 @@ h2,
 
 h3,
 .h3 { /* = 18px */
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 @media (min-width: 600px) {
     h3,
